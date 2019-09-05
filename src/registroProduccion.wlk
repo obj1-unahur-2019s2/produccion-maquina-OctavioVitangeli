@@ -4,4 +4,10 @@ object registroProduccion {
 	method cambiarProduccionPorDia(nuevaLista) {
 		produccionPorDia = nuevaLista
 	}
+
+	method algunDiaSeProdujo(cantidad){
+		return produccionPorDia.any({pd => pd == cantidad})
+	}
+
+
 }
